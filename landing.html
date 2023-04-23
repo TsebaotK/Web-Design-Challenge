@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav navbar">  <!-- class=topnav -->
+        <nav class="navbar navbar-fixed-top navbar-header navbar-expand-lg" id="top">
+            <div class="align-items-left nav-item active">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rightnavbuttons">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="landing.html">
+                    <button id="latitude" type="button" class="btn btn-danger navbar-btn">Latitude</button>
+                </a>
+            </div>
+
+            <dir class="collapse navbar-collapse container-fluid navbar navbar-nav" style="float:right; clear: both">
+                <ul id="rightnavbuttons" class="nav navbar-nav btn-group">
+                    <a class="btn dropdown-toggle" data-toggle="dropdown">Plot<span class=" caret"></span> </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <a class="dropdown-item" href="Visualizations\max_temperature.html">Max Temperature</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Visualizations\humidity.html">Humidity</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Visualizations\cloudiness.html">Cloudiness</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="Visualizations\wind_speed.html">Wind Speed</a>
+                        </li>
+                    </ul>
+                    <a class="nav-link" href="comparisons.html">
+                        <button type="button" class="btn btn-link btn-group-lg" href="comparisons.html">Comparison
+                        </button>
+                    </a>
+                    <a class="nav-link" href="data.html">
+                        <button type="button" class="btn btn-link btn-group-lg" href="data.html">Data</button>
+                    </a>
+                </ul>
+            </dir>
+        </nav>
+    </div>
+
+    <main>
+        <div class="row" id="landingpage">
+            <div id="summary" class=" container col-md-9">
+                <header class="header">
+                    <h1>Summary: Latitude vs. X</h1>
+                </header>
+                <div class="section">
+                    <img width="250" id="mainimage" class="btn-group-lg" src="Resources\assets\images\Fig1.png"
+                        alt="City Latitude vs Max Temperature (01/05/17)">
+                    <p>The purpose of this project was to analyze how weather changes as you get closer to the
+                        equator.
+                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a
+                        dataset of over 500 cities. </p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs.
+                        latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity.
+                        This
+                        site provides the source data and visualizations created as part of the analysis, as well as
+                        explanations and descriptions of any trends and correlations witnessed. </p>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="container">
+                    <div id="right-sidebar" class="right-sidebar">
+                        <h2>Visualizations</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="Visualizations\max_temperature.html">
+                                    <img style="width:150%" type="button" class="btn btn-link btn-group-lg" href=#
+                                        src="Resources\assets\images\Fig1.png"
+                                        alt="City Latitude vs Max Temperature (01/05/17)">
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="Visualizations\humidity.html">
+                                    <img style="width:150%" type="button" class="btn btn-link btn-group-lg"
+                                        href="Visualizations\humidity.html" src="Resources\assets\images\Fig2.png"
+                                        alt="City Latitude vs Humidity (01/05/17)">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="Visualizations\cloudiness.html">
+                                    <img style="width:150%" type="button" class="btn btn-link btn-group-lg"
+                                        href="Visualizations\cloudiness.html" src="Resources\assets\images\Fig3.png"
+                                        alt="City Latitude vs Cloudiness (01/05/17)" />
+                                </a>
+
+                            </div>
+                            <div class="col-md-6">
+                                <a href="Visualizations\wind_speed.html">
+                                    <img style="width:150%" type="button" class="btn btn-link btn-group-lg"
+                                        href="Visualizations\wind_speed.html" src="Resources\assets\images\Fig4.png"
+                                        alt="City Latitude vs Wind Speed (01/05/17)">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

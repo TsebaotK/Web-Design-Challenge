@@ -1,0 +1,183 @@
+nav {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.navbar-toggle {
+    background: lightseagreen;
+    border:3px solid white;
+    color: red;
+}
+
+#latitude {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 0;
+    position: fixed;
+    cursor: pointer;
+    color: white;
+    background: lightseagreen;
+    border-radius: 3px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#rightnavbar {
+    text-align: center;
+    font-size: 0px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.icon-bar {
+    background-color: black;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(226, 223, 223);
+}
+
+#summary {
+    width: 45%;
+    line-height: 150%;
+    background: white;
+    margin-left: 200px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px 80px 50px 20px;
+}
+
+#mainimage {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background: whitesmoke;
+    ;
+}
+
+#right-sidebar {
+    width: 30%;
+    background: white;
+    padding: 20px 50px 20px 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 200%;
+    margin: 0;
+    margin-left: 50px;
+}
+
+h1 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 150%;
+    font-size: 25px;
+    font-weight: bold;
+    color: lightseagreen;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    line-height: 150%;
+    font-size: 25px;
+    font-weight: bold;
+    color: lightseagreen;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+    color: lightseagreen;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+#datatable {
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 85%;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#charts {
+    width: 70%;
+    background: white;
+    margin: 50px 50px 20px 200px;
+    padding: 0px 20px 20px 20px;
+}
