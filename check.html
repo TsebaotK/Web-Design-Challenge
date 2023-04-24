@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="nav navbar"> <!-- class=topnav -->
+        <nav class="navbar navbar-fixed-top navbar-header navbar-expand-lg" id="top">
+            <div class="navbar-header align-items-left nav-item active">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#rightnavbuttons">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="landing.html">
+                    <button id="latitude" type="button" class="btn btn-danger navbar-btn">Latitude</button>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="rightnavbuttons" style="float:right; clear: both">
+                <ul class="nav navbar-nav btn-group navbar-nav">
+                        <li class="dropdown">
+                            <a class="btn dropdown-toggle" data-toggle="dropdown">Plot<span class=" caret"></span> </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <a class="dropdown-item" href="Visualizations\max_temperature.html">Max
+                                        Temperature</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Visualizations\humidity.html">Humidity</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Visualizations\cloudiness.html">Cloudiness</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="Visualizations\wind_speed.html">Wind Speed</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="comparisons.html">
+                                <button type="button" class="btn btn-link btn-group-lg"
+                                    href="comparisons.html">Comparison
+                                </button>
+                            </a></li>
+                        <li><a class="nav-link" href="data.html">
+                                <button type="button" class="btn btn-link btn-group-lg" href="data.html">Data</button>
+                            </a></li>
+                    </ul>
+            </div>
+        </nav>
+    </div>
+    </nav>
+
+    <div class="container">
+        <h3>Collapsible Navbar</h3>
+        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right
+            corner (try to re-size this window).
+        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+    </div>
+
+</body>
+
+</html>

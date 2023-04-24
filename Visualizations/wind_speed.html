@@ -30,9 +30,10 @@
                 </a>
             </div>
 
-            <div class="right-nav collapse navbar-collapse container-fluid navbar navbar-nav"
+            <div id="rightnavbuttons" class="right-nav collapse navbar-collapse container-fluid navbar navbar-nav"
                 style="float:right; clear: both">
-                <ul id="rightnavbuttons" class="nav navbar-nav btn-group navbar-nav">
+                <ul class="nav navbar-nav btn-group navbar-nav">
+                    <li>
                     <a class="btn dropdown-toggle" data-toggle="dropdown">Plot<span class="caret"></span> </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <li>
@@ -48,13 +49,15 @@
                             <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
                         </li>
                     </ul>
-                    <a class="nav-link" href="../comparisons.html">
-                        <button type="button" class="btn btn-link btn-group-lg" href="../comparisons.html">Comparison
-                        </button>
+                </li>
+                <li>
+                    <a type="button" class="nav-link btn btn-link btn-group-lg" href="../comparisons.html">Comparison
+                        </a>
+                </li>
+                <li>
+                    <a type="button" class="nav-link btn btn-link btn-group-lg" href="../data.html">Data
                     </a>
-                    <a class="nav-link" href="../data.html">
-                        <button type="button" class="btn btn-link btn-group-lg" href="../data.html">Data</button>
-                    </a>
+                </li>
                 </ul>
             </div>
         </nav>
